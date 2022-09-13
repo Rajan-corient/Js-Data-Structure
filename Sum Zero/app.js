@@ -44,8 +44,32 @@ function getEfficientSumZeroPair(arr) {
     }
 }
 
-const result1 = getEfficientSumZeroPair(numList);
+// using for loop
+function getEfficientSumZeroPair2(arr) {
+    let sum = 0;
+    let right = arr.length - 1;
+    for (let left = 0; left < right; (sum < 0) ? left++ : right--) {
+        sum = arr[left] + arr[right];
+        if (sum === 0) {
+            return [arr[left], arr[right]];
+        }
+        if (sum > 0) {
+            right--;
+        }           
+        if (sum < 0) {
+            left++;
+        }
+    }
+}
+
+let numList1 = [-5, -4, -3, -2, 0, 2, 4, 6, 8];
+let numList2 = [-5, -4, -3, -2, 0, 2, 3, 6, 8];
+
+const result1 = getEfficientSumZeroPair(numList1);
 console.log(result1);
+
+const result2 = getEfficientSumZeroPair2(numList2);
+console.log(result2);
 
 
 
