@@ -1,4 +1,4 @@
-// Checking sum zero -- problem1
+// Checking sum zero -- problem1   (Two sum)
 // [-5, -4, -3, -2, 0, 2, 4, 6, 8];   --> Input
 // [-4, 4]  --> Output
 
