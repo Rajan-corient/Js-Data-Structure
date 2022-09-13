@@ -25,6 +25,7 @@ console.log('res', res);
 
 // str1 --> hello 
 // str2 --> lleho
+// O(n)  linear time complexity
 function isAnalog (str1, str2) {
     if (str1.length !== str2.length) {
         return false;
