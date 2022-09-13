@@ -34,11 +34,9 @@ function getEfficientSumZeroPair(arr) {
         const sum = arr[left] + arr[right];
         if (sum === 0) {
             return [arr[left], arr[right]];
-        }
-        if (sum > 0) {
+        } else if (sum > 0) {
             right--;
-        }           
-        if (sum < 0) {
+        } else {
             left++;
         }
     }
@@ -52,11 +50,9 @@ function getEfficientSumZeroPair2(arr) {
         sum = arr[left] + arr[right];
         if (sum === 0) {
             return [arr[left], arr[right]];
-        }
-        if (sum > 0) {
+        } else if (sum > 0) {
             right--;
-        }           
-        if (sum < 0) {
+        } else {
             left++;
         }
     }
