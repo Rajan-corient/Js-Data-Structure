@@ -6,7 +6,12 @@
 let counter = 1;
 
 function demo (number) {
+    if (counter > number) {
+       return; 
+    }
     console.log('demo ' +counter);
-    counter++
-    demo()
+    counter++;
+    demo(number);
 }
+
+demo(10);
