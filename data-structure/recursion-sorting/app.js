@@ -36,5 +36,7 @@ function sortRecursively(arr) {
     }
 }
 
-sortRecursively(myArray);
+let numArr = [2,3,1,4];
+// sortRecursively(myArray);
+sortRecursively(numArr);
 console.log('sortedList',sortedList);
