@@ -1,6 +1,6 @@
 // binary search 
 // divide and conquerer technique
-// find index of given no in a sorted array 12 
+// find index of given no in a sorted array ... no is 12 
 // [1,2,3,6,7,11,12,15,16];  ===>  output = index 6
 
 // min = 0, index = 0 element = 1
