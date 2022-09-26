@@ -36,6 +36,7 @@ function bubbleSort2(array) {
     console.log('sorted array', array);
 }
 
+// quadratic time complexity O(n^2)
 function bubbleSort(array) {
     for (let i = 0; i < array.length-1; i++) {
         isSwapped = false;
