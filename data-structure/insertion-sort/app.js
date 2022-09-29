@@ -5,19 +5,23 @@
 // and rest other elements will be in unsorted part [8,2,4,1,3]
 
 
-
 // quadratic time complexity O(n^2)
-function insertionSort(arr) {
-    for (let i = 0; i < arr.length-1; i++) {
-        for (let j = arr.length-1; j > 0; j--) {
-            if (arr[i] > arr[j]) {
-                [arr[i], arr[j]] = [arr[j], arr[i]];
-            }
+function insertionSort(arr, n) {
+    let i, j, key;
+    for (i = 1; i < n; i++) {
+        key = arr[i];
+        j = i - 1;
+
+        while (j >= 0 && arr[j] > key) {
+            arr[j+1] = arr[j];
+            j = j - 1;
         }
+        arr[j+1] = key;
     }
     return arr;
 }
 
-let numArr = [7,8,2,4,1,3];
-let res = insertionSort(numArr);
+let numArr = [12, 11, 13, 5, 6];
+let n = numArr.length;
+let res = insertionSort(numArr, n);
 console.log('res', res);
